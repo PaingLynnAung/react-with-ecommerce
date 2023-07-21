@@ -1,0 +1,11 @@
+#searchCartsScrollbar::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+    border-radius: 1em;
+}
+
+#searchCartsScrollbar::-webkit-scrollbar-thumb{
+    background: coral;
+    border-radius: 1em;
+}
+
