@@ -46,7 +46,6 @@ const Search = () => {
                     <span className="flex flex-row items-center gpa-4 text-gray-600 font-semibold"><HiOutlineMenuAlt4 size='1.5em'/><span className='ml-2'><span className=''>Shop by Category</span></span></span>
                     <div className="transition duration-[20000] ease-in-out absolute top-[8.3em] translate-x-[-14em] z-10 group-hover:translate-x-0">
                         <ul className="flex flex-col w-[10em] px-3 pb-5 bg-[#000000c4]">
-                            <li onClick={()=>toShop('accessories')} className="group pl-3 border-b-[1px] pt-4 pb-1 text-gray-300 border-white cursor-pointer hover:font-bold hover:text-white">Accessories</li>
                             <li onClick={()=>toShop('new-arrivals')} className="pl-3 border-b-[1px] py-1 text-gray-300 border-white cursor-pointer hover:font-bold hover:text-white">New arrivals</li>
                             <li onClick={()=>toShop('electronics')} className="pl-3 border-b-[1px] py-1 text-gray-300 border-white cursor-pointer hover:font-bold hover:text-white">Electronics</li>
                             <li onClick={()=>toShop('cloths')} className="pl-3 border-b-[1px] py-1 text-gray-300 border-white cursor-pointer hover:font-bold hover:text-white">Cloths</li>

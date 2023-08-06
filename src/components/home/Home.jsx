@@ -4,14 +4,11 @@ import { bigOffer } from "../data/BigOffer";
 import Footer from "../static_content/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import "swiper/css"
 import "swiper/css/autoplay"
 import './styles.css'
 import { useNavigate } from "react-router-dom";
-
-
-
 
 
 const Home = () => {
@@ -26,8 +23,7 @@ const Home = () => {
     return (
         <div className="mt-[8em]">
             <Swiper className="w-full h-[27em] "
-                modules={[Autoplay,Navigation]}
-                navigation = {{enabled:false}}
+                modules={[Autoplay]}
                 autoplay={{ delay: 3000,}}
                 breakpoints={{
                     0:{

@@ -5,7 +5,6 @@ import Home from './components/home/Home'
 import Shop from './components/shop/Shop'
 import Cart from './components/cart/Cart'
 import Details from './components/details/Details'
-import PaymentGateway from './components/payment_gateway/PaymentGateway'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import './App.css'
@@ -64,7 +63,6 @@ function App() {
             <Route path='/contact' element={<Contact/>} />
             <Route path='/cart' element={<Cart/>} />
             <Route path='product/:category/:product_name' element={<Details/>} />
-            <Route path='/payment-gateway' element={<PaymentGateway/>} />
           </Routes>
       </cartsContext.Provider>
     </div>

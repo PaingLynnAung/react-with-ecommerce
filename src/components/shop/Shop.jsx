@@ -135,29 +135,6 @@ const Shop = () => {
                                 <BiPlus/>
                             </li>
                         </ul>
-                        {/* <ul className=" flex flex-col gap-2 mt-5">
-                            <li className='font-bold text-xl'>Shop By Category</li>
-                            <li onClick={()=>setDataToLocalStorage(electronics,'accessories')} className='flex justify-between items-center py-2 border-b-[1px] cursor-pointer'>
-                                <span id='cateType' className={`${showByCategories==='accessories'?'font-semibold':''}`}>Accessories</span>
-                                <BiPlus/>
-                            </li>
-                            <li onClick={()=>setDataToLocalStorage(newArrivials,'new-arrivals')} className='flex justify-between items-center py-2 border-b-[1px] cursor-pointer'>
-                                <span id='cateType' className={`${showByCategories==='new-arrivals'?'font-semibold':''}`}>New Arrivals</span>
-                                <BiPlus/>
-                            </li>
-                            <li className='flex justify-between items-center py-2 border-b-[1px] cursor-pointer'>
-                                <span id='cateType' className={`${showByCategories==='electronics'?'font-semibold':''}`}>Electronics</span>
-                                <BiPlus/>
-                            </li>
-                            <li className='flex justify-between items-center py-2 border-b-[1px] cursor-pointer'>
-                                <span id='cateType' className={`${showByCategories==='cloths'?'font-semibold':''}`}>Cloths</span>
-                                <BiPlus/>
-                            </li>
-                            <li className='flex justify-between items-center py-2 border-b-[1px] cursor-pointer'>
-                                <span id='cateType' className={`${showByCategories==='bags'?'font-semibold':''}`}>Bags</span>
-                                <BiPlus/>
-                            </li>
-                        </ul> */}
                     </div>
                     <div className=" lg:py-4 lg:px-5 lg:w-[74%] sm:w-full">
                         <div className="flex sm:flex-col sm:items-start md:justify-between md:flex-row md:items-center sticky z-20 sm:px-3 lg:px-0 bg-white sm:top-[188px] md:top-[166px]">
@@ -189,7 +166,6 @@ const Shop = () => {
                                 return(
                                     <div key={obj.id} className="relative">
                                         <div className="group relative overflow-hidden flex justify-center bg-[#F4F2DE]">
-                                            {/* <span className='absolute top-3 grid place-items-center left-3 w-[5em] h-[2em] bg-black text-white'>New</span> */}
                                             <img className='h-[17em] w-[14em] object-cover' src={obj.img} alt="" />
                                             <ul id='card-user-actions' className='absolute bottom-0 px-1 border-[1px] border-gray-200 transition duration-500 ease-in-out translate-y-[9em] group-hover:translate-y-0 w-full bg-white flex flex-col'>
                                                 <li onClick={()=>addToCart(obj)} id='add-to-cart' className='flex justify-end items-center gap-1 w-full py-[1px] px-1 cursor-pointer border-gray-300 border-b-[1px]'>
